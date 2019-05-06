@@ -1,0 +1,31 @@
+.ep-list {
+    text-align: center;
+}
+
+.ep-list li {
+    max-width: 200px;
+    margin: 0 auto;
+    background: darkblue;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 250px;
+    margin: 10px;
+    position: relative;
+    font-family: 'Trebuchet MS';
+}
+
+.ep-list img {
+    max-width: 200px;
+}
+
+.ep-title {
+    margin: 5px;
+}
+
+.ep-synopsis {
+    position: absolute;
+    max-width: 200px;
+    bottom: 20px;
+}

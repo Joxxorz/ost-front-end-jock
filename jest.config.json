@@ -1,0 +1,42 @@
+{
+  "verbose": true,
+  "bail": false,
+  "collectCoverageFrom": [
+    "app/**/*.{js,jsx}",
+    "!**/node_modules/**",
+    "!app/**/*.fixtures.js",
+    "!dist/**",
+    "!app/vendor.js",
+    "!app/**/*.spec.js",
+    "!app/**/*.spec.jsx"
+  ],
+  "coverageDirectory": "test-reports/unit-test-reports/coverage",
+  "coverageReporters": [
+    "cobertura",
+    "lcov",
+    "text"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 80,
+      "lines": 80,
+      "statements": 80
+    }
+  },
+  "moduleNameMapper": {
+    ".*\\.scss$": "identity-obj-proxy"
+  },
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "modulePaths": [
+    "<rootDir>/app/",
+    "<rootDir>/app/lib/"
+  ],
+  "setupFiles": [
+    "raf/polyfill",
+    "<rootDir>/node_modules/babel-polyfill/",
+    "<rootDir>/enzyme.config.js"
+  ]
+}

@@ -1,0 +1,40 @@
+# CI/tests
+cms/jshint.xml
+test_xml
+test-reports/
+
+# Front End App Packages
+node_modules/
+npm-debug.log
+
+# Compiled Development Assets
+bundle.js
+bundle.min.js
+build/**/*.css
+*.css.map
+*.js.map
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+integration-reports/
+**/screenshots/
+
+# Editors/IDEs
+.idea
+.vscode
+
+# OsX
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# yarn
+yarn.lock
